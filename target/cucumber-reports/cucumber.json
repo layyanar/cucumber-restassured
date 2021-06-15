@@ -1,0 +1,871 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T08:17:42.153Z",
+        "line": 4,
+        "name": "Verify word count 7 - Positive",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-7---positive",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 755000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the words exist with count of \u00277\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1153000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 864000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "response includes the following",
+            "match": {
+              "location": "steps.BookStepDefinitions.response_equals(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "I",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "this",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "my",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "could",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "know",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "play",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "stupid",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.069Z",
+        "line": 17,
+        "name": "Verify word count 6 - Positive",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-6---positive",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the words exist with count of \u00276\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "response includes the following",
+            "match": {
+              "location": "steps.BookStepDefinitions.response_equals(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "I",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "this",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "my",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "could",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "know",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "play",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.212Z",
+        "line": 29,
+        "name": "Verify word count 1 - Positive",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-1---positive",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the words exist with count of \u00271\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "response includes the following",
+            "match": {
+              "location": "steps.BookStepDefinitions.response_equals(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "I",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.280Z",
+        "line": 36,
+        "name": "Verify word count 0 - Positive",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-0---positive",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the words exist with count of \u00270\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "response includes empty record",
+            "match": {
+              "location": "steps.BookStepDefinitions.no_response_equals()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.320Z",
+        "line": 42,
+        "name": "Verify word count max in descending order - Positive",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-max-in-descending-order---positive",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user enters max word count 44 and expects response in below order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "44",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BookStepDefinitions.sort_response(java.lang.String,java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "{\"I\":5,\"this\":3,\"my\":3,\"could\":2,\"know\":2,\"play\":1,\"stupid\":1,\"die\":1,\"be\":1,\"thought\":1,\"hoped\":1,\"soul\":1,\"couch\":1,\"Is\":1,\"reptilian\":1,\"beautiful\":1,\"and\":1,\"God\":1,\"just\":1,\"on\":1,\"Space\":1,\"That\":1,\"But\":1,\"always\":1,\"a\":1,\"mind\":1,\"d\":1,\"learn\":1,\"like\":1,\"in\":1,\"was\":1,\"friends\":1,\"really\":1,\"the\":1,\"never\":1,\"Pope\":1,\"once\":1,\"to\":1,\"If\":1,\"thing\":1,\"You\":1,\"sitting\":1,\"Goodbye\":1}"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.363Z",
+        "line": 46,
+        "name": "Verify word count with no authorization - Negative",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-with-no-authorization---negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "the words exist with count of \u00271\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "a user retrieves word count with auth No",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the status code is 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the error message is as below",
+            "match": {
+              "location": "steps.BookStepDefinitions.errorMessageValidation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Unauthorized"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.401Z",
+        "line": 53,
+        "name": "Verify word count with invalid authorization - Negative",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-with-invalid-authorization---negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the words exist with count of \u00271\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "a user retrieves word count with auth Invalid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the status code is 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the error message is as below",
+            "match": {
+              "location": "steps.BookStepDefinitions.errorMessageValidation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Unauthorized"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.512Z",
+        "line": 60,
+        "name": "Verify word count with negative number - Negative",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-with-negative-number---negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "the words exist with count of \u0027-1\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "-1",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the status code is 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "the error message is as below",
+            "match": {
+              "location": "steps.BookStepDefinitions.errorMessageValidation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Internal Server Error"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.583Z",
+        "line": 67,
+        "name": "Verify word count with no value - Negative",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-with-no-value---negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the words exist with count of \u0027\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "the status code is 500",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "the error message is as below",
+            "match": {
+              "location": "steps.BookStepDefinitions.errorMessageValidation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Internal Server Error"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T08:17:45.669Z",
+        "line": 74,
+        "name": "Verify word count with special character - Negative",
+        "description": "",
+        "id": "word-count-match---positive-and-negative-scenarios;verify-word-count-with-special-character---negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the words exist with count of \u0027\u0026\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0026",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.BookStepDefinitions.wordCountParam(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "a user retrieves word count with auth Yes",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.BookStepDefinitions.getWordCount(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "the status code is 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 19
+                }
+              ],
+              "location": "steps.BookStepDefinitions.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "the error message is as below",
+            "match": {
+              "location": "steps.BookStepDefinitions.errorMessageValidation(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "error",
+                  "Bad Request"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Word count match - positive and negative scenarios",
+    "description": "",
+    "id": "word-count-match---positive-and-negative-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/WordCount.feature",
+    "tags": []
+  }
+]
